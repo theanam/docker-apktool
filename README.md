@@ -1,6 +1,5 @@
 ## Docker Image for apktool
 
-******
 
 Based on `OpenJDK 8` and `Apktool 2.3.4`, I have plans to keep this updated (you can contribute too)
 
@@ -28,9 +27,12 @@ once you close and open a new terminal window once after that, you can use the t
 
     apktool d apk_file.apk
 
+
+
 or you can use any other command line arguments mentioned in their official Site: <https://ibotpeaches.github.io/Apktool/>
 
 > Applications are properties of their respective owners.
+
 
 ### Tools used:
 
