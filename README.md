@@ -1,19 +1,24 @@
 ## Docker Image for apktool
 
 
-Based on `OpenJDK 8` and `Apktool 2.4.0`, I have plans to keep this updated (you can contribute too)
+Based on `OpenJDK 8` and `Apktool 2.8.0`.
 
 ### System Requirements:
 
 * [Docker](https://www.docker.com/get-started) 18.06.1+
 
+### Building the Container
+This assumes that you've cloned the repository locally:
+
+   docker build . --tag docker-apktool:latest
+
 ### How to use: 
 
-for `99.99%` of cases, you probably want to run the command once, and then remove the container.
+For `99.99%` of cases, you probably want to run the command once, and then remove the container.
 
 To run it once use the following command (will take longer for the first time):
 
-    docker run --rm -v `pwd`:/app theanam/apktool d apk_file.apk
+    docker run --rm -v `pwd`:/app docker-apktool d apk_file.apk
 
 this should decompile the apk file `apk_file.apk`
 
@@ -21,7 +26,7 @@ this should decompile the apk file `apk_file.apk`
 
 You might convert the above command to an alias. Open your `.bashrc` or `.zshrc` or any other shell configuration file, add the following at the very end:
 
-    alias apktool="docker run --rm -v `pwd`:/app theanam/apktool"
+    alias apktool="docker run --rm -v `pwd`:/app docker-apktool"
 
 once you close and open a new terminal window once after that, you can use the tool from command line in a cleaner way as the command (apktool) will be available:
 
