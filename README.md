@@ -1,7 +1,7 @@
 ## Docker Image for apktool
 
 
-Based on `OpenJDK 8` and `Apktool 2.8.0`.
+Based on `OpenJDK 8` and `Apktool 2.6.0`.
 
 ### System Requirements:
 
